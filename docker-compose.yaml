@@ -10,6 +10,7 @@ services:
       - "443:443"
     volumes:
       - ./nginx/conf:/etc/nginx/conf.d
+      - ./certs:/certs
   app:
     build:
       context: ./app
